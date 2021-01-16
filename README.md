@@ -46,9 +46,7 @@ List of features
 * Displays details of homes in neighborhoods
 
 ## Disclaimer
-Content is intended to be used for informational purposes only. It's very important to do your own analysis before making
-any investment based on your own personal circumstances. In other words, do your own independent research or speak with a
-qualified investment professional before making any financial decisions.
+Content is intended to be used for informational purposes only. It's very important to do your own analysis before making any investment based on your own personal circumstances. In other words, do your own independent research or speak with a qualified investment professional before making any financial decisions.
 
 ## Status
 Project is: _in progress_. 
