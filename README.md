@@ -10,7 +10,7 @@
 * [Inspiration](#inspiration)
 
 ## General info
-A Java, React, Redux, and PostgreSQL application where users can view homes for sale, and see details of homes in a neighborhood.
+A Java, Spring Boot, React, Redux, and PostgreSQL application where users can view homes for sale, and see details of homes in a neighborhood.
 
 [Live Link]()
 
