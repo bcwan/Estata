@@ -26,6 +26,9 @@ import com.bcwan.estata.backend.security.services.UserDetailsServiceImpl;
     prePostEnabled = true
 )
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+  // Spring Security will load User details to perform authentication and
+  // authorization
   @Autowired
   UserDetailsServiceImpl userDetailsService;
 
@@ -53,6 +56,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     return new BCryptPasswordEncoder();
   }
 
+  // tells Spring Security we want CORS and CSRF configured
+  // requires all users to be authenticated or not
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.cors().and().csrf().disable().exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
