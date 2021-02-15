@@ -10,7 +10,19 @@ import org.springframework.transaction.annotation.Transactional;
 import com.bcwan.estata.backend.models.User;
 import com.bcwan.estata.backend.repository.UserRepository;
 
+// deals with UserDetails business logic
 @Service
-public class UserDetailsServiceImpl {
-  
+public class UserDetailsServiceImpl implements UserDetailsService {
+
+  @Autowired
+  UserRepository userRepository;
+
+  @Override
+  @Transactional
+  public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    User user = userRepository.findByUsername(username)
+                  .orElseThrow(() -> new UsernameNotFoundException("User not found with username: " + username));
+    return UserDetailsImpl.build(user);
+  }
+
 }
