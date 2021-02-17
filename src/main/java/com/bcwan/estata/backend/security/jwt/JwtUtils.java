@@ -13,6 +13,7 @@ import com.bcwan.estata.backend.security.services.UserDetailsImpl;
 import io.jsonwebtoken.*;
 
 // provides methods for generating, parsing, and validating JWT
+@Component
 public class JwtUtils {
   private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 

@@ -21,6 +21,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 // Handle Authentication Exceptions based on JWT matching
 // commerce() is overridden and will be triggered anytime a secured HTTP resource and
 // authentication error is thrown
+
+@Component
 public class AuthEntryPointJwt implements AuthenticationEntryPoint {
   
   private static final Logger logger = LoggerFactory.getLogger(AuthEntryPointJwt.class);
