@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.security.jwt;
+package com.bcwan.estata.security.jwt;
 
 import java.io.IOException;
 import java.util.HashMap;

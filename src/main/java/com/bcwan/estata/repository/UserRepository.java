@@ -1,10 +1,10 @@
-package com.bcwan.estata.backend.repository;
+package com.bcwan.estata.repository;
 
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.bcwan.estata.backend.models.User;
+import com.bcwan.estata.models.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{

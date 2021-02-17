@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.models;
+package com.bcwan.estata.models;
 
 public enum ERole {
   ROLE_USER,

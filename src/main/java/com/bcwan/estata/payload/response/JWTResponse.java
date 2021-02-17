@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.payload.response;
+package com.bcwan.estata.payload.response;
 
 import java.util.List;
 

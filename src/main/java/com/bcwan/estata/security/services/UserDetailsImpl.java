@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.security.services;
+package com.bcwan.estata.security.services;
 
 import java.util.Collection;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.bcwan.estata.backend.models.User;
+import com.bcwan.estata.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class UserDetailsImpl implements UserDetails {

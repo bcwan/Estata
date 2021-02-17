@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.payload.request;
+package com.bcwan.estata.payload.request;
 
 import javax.validation.constraints.NotBlank;
 

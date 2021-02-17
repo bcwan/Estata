@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.models;
+package com.bcwan.estata.models;
 
 import java.util.HashSet;
 import java.util.Set;

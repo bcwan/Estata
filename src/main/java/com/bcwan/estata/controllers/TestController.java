@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.controllers;
+package com.bcwan.estata.controllers;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;

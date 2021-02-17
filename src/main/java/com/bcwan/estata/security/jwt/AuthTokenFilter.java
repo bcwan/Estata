@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.security.jwt;
+package com.bcwan.estata.security.jwt;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.bcwan.estata.backend.security.services.UserDetailsServiceImpl;
+import com.bcwan.estata.security.services.UserDetailsServiceImpl;
 
 public class AuthTokenFilter extends OncePerRequestFilter {
   @Autowired

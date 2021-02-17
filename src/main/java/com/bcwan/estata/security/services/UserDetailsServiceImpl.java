@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.security.services;
+package com.bcwan.estata.security.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bcwan.estata.backend.models.User;
-import com.bcwan.estata.backend.repository.UserRepository;
+import com.bcwan.estata.models.User;
+import com.bcwan.estata.repository.UserRepository;
 
 // deals with UserDetails business logic
 @Service

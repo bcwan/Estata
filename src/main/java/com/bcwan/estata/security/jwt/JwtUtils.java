@@ -1,4 +1,4 @@
-package com.bcwan.estata.backend.security.jwt;
+package com.bcwan.estata.security.jwt;
 
 import java.util.Date;
 
@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
-import com.bcwan.estata.backend.security.services.UserDetailsImpl;
+import com.bcwan.estata.security.services.UserDetailsImpl;
 
 import io.jsonwebtoken.*;
 
