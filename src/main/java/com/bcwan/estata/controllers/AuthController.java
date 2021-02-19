@@ -1,4 +1,5 @@
 package com.bcwan.estata.controllers;
+//package com.bcwan.estata;
 
 import java.util.HashSet;
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
+import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -38,6 +40,7 @@ import com.bcwan.estata.repository.UserRepository;
 import com.bcwan.estata.security.jwt.JwtUtils;
 import com.bcwan.estata.security.services.UserDetailsImpl;
 
+@Component
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
