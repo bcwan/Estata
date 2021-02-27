@@ -16,16 +16,17 @@ export const registerFail = () => ({
   type: REGISTER_FAIL
 });
 
+export const loginSuccess = (data) => ({
+  type: LOGIN_SUCCESS,
+  payload: { user: data }
+});
+
+export const loginFail = () => ({
+  type: LOGIN_FAIL
+});
+
 export const loginSuccess = () => ({
   type: LOGIN_SUCCESS
-});
-
-export const registerFail = () => ({
-  type: REGISTER_FAIL
-});
-
-export const registerFail = () => ({
-  type: REGISTER_FAIL
 });
 
 export const logoutSuccess = () => ({
@@ -48,4 +49,21 @@ export const register = (username, email, password) => (dispatch) => {
           }
     );
 };
+
+export const login = (username, password) => (dispatch) => {
+  return AuthService.login(username, password)
+      .then((data) => {
+        dispatch(loginSuccess(data));
+        return Promise.resolve();
+      },
+      (error) => {
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
+        dispatch(loginFail());
+        dispatch(setMessage(message));
+        return Promise.reject();
+      }
+  );
+};
+
+
 
