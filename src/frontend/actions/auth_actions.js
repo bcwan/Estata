@@ -8,28 +8,28 @@ import AuthService from '../services/auth/auth_service';
 
 import { setMessage } from './message_actions';
 
-export const registerSuccess = () => ({
+const registerSuccess = () => ({
   type: REGISTER_SUCCESS
 });
 
-export const registerFail = () => ({
+const registerFail = () => ({
   type: REGISTER_FAIL
 });
 
-export const loginSuccess = (data) => ({
+const loginSuccess = (data) => ({
   type: LOGIN_SUCCESS,
   payload: { user: data }
 });
 
-export const loginFail = () => ({
+const loginFail = () => ({
   type: LOGIN_FAIL
 });
 
-export const loginSuccess = () => ({
+const loginSuccess = () => ({
   type: LOGIN_SUCCESS
 });
 
-export const logoutSuccess = () => ({
+const logoutSuccess = () => ({
   type: LOGOUT_SUCCESS
 });
 
