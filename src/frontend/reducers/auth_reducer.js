@@ -13,20 +13,24 @@ const AuthReducer = (oldState = {}, action) => {
   const nextState = Object.assign({}, oldState);
   switch (action.type) {
     case REGISTER_SUCCESS:
-      
-      break;
     case REGISTER_FAIL:
-      
-      break;
+      return {
+        ...nextState,
+        isLoggedIn: false
+      }
     case LOGIN_SUCCESS:
-      
-      break;
+      return {
+        ...nextState,
+        isLoggedIn: true,
+        user: action.payload.user
+      }
     case LOGIN_FAIL:
-      
-      break;
     case LOGOUT_SUCCESS:
-
-      break;
+      return {
+        ...nextState,
+        isLoggedIn: false,
+        user: null
+      }
     default:
       return oldState;
   }
