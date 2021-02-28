@@ -8,7 +8,7 @@ import {
 
 const user = JSON.parse(localStorage.getItem("user"));
 
-const AuthReducer = (oldState = {}, action) => {
+const authReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
   const nextState = Object.assign({}, oldState);
   switch (action.type) {
@@ -36,4 +36,4 @@ const AuthReducer = (oldState = {}, action) => {
   }
 }
 
-export default AuthReducer;
+export default authReducer;

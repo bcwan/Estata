@@ -1,6 +1,6 @@
 import { SET_MESSAGE, CLEAR_MESSAGE } from '../actions/message_actions';
 
-const MessageReducer = (oldState = {}, action) => {
+const messageReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
   let nextState = Object.assign({}, oldState);
   switch (action.type) {
@@ -15,4 +15,4 @@ const MessageReducer = (oldState = {}, action) => {
   }
 }
 
-export default MessageReducer;
+export default messageReducer;
