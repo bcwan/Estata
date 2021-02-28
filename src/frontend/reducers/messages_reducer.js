@@ -5,7 +5,8 @@ const MessageReducer = (oldState = {}, action) => {
   let nextState = Object.assign({}, oldState);
   switch (action.type) {
     case SET_MESSAGE:
-      return action.payload;
+      nextState["message"] = action.payload;
+      return nextState;
     case CLEAR_MESSAGE:
       delete nextState["payload"];
       return nextState;
