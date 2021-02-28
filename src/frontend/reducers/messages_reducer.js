@@ -8,7 +8,7 @@ const MessageReducer = (oldState = {}, action) => {
       nextState["message"] = action.payload;
       return nextState;
     case CLEAR_MESSAGE:
-      delete nextState["payload"];
+      delete nextState["message"];
       return nextState;
     default:
       return oldState;
