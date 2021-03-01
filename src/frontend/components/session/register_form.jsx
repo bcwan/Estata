@@ -78,7 +78,32 @@ class RegisterForm extends Component {
     });
   }
 
+  handleRegister(e) {
+    e.preventDefault();
+
+    this.setState({
+      successful: false,
+    });
+
+    this.form.validateAll();
+
+    if (this.checkBtn.context._errors.length === 0) {
+      this.props.register(this.state.username, this.state.email, this.state.password)
+        .then(() => {
+          this.setState({
+            successful: true,
+          });
+        }).catch(() => {
+          this.setState({
+            successful: false,
+          });
+        });
+    }
+  }
+
   render() {
+    const { message } = this.props;
+
     return (
       <div>
         
