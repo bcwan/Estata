@@ -15,7 +15,7 @@ import RegisterFormContainer from './session/register_form_container';
 class App extends Component {
 
   render() {
-    <div>
+    <div className="container mt-3">
       {/* <Router history={history}> */}
       <Router>
         <NavBarContainer />
