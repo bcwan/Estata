@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Router, Switch, Route, Link } from 'react-router-dom';
+import { history } from '../../history/history';
 
 export class NavBar extends Component {
   constructor(props) {
@@ -9,12 +11,16 @@ export class NavBar extends Component {
       currentUser: undefined,
     };
 
-    this.logOut = this.logOut.bind(this);
+    this.logout = this.logout.bind(this);
+
+    history.listen((location) => {
+      this.props.clearMessage();
+    });
 
   }
 
-  logOut() {
-
+  logout() {
+    this.props.logout();
   }
 
   render() {
