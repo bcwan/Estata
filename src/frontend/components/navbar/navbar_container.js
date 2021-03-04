@@ -4,7 +4,7 @@ import { logout } from '../../actions/auth_actions';
 import { clearMessage } from '../../actions/message_actions';
 
 const mSTP = (state) => ({
-
+  user: state.auth.user,
 });
 
 const mDTP = (dispatch) => ({
