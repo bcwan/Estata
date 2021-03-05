@@ -25,10 +25,6 @@ const loginFail = () => ({
   type: LOGIN_FAIL
 });
 
-const loginSuccess = () => ({
-  type: LOGIN_SUCCESS
-});
-
 const logoutSuccess = () => ({
   type: LOGOUT_SUCCESS
 });
