@@ -38,3 +38,4 @@ src/main/java/.DS_Store
 src/main/java/com/.DS_Store
 src/main/java/com/bcwan/.DS_Store
 node_modules
+src/frontend/dist
