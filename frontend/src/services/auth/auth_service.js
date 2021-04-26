@@ -1,10 +1,13 @@
 import axios from "axios";
 
+const API_URL = `http://localhost:8080`;
+
 // uses Axios for HTTP requests and local storage to store user info and JWT token
 class AuthService {
+  // /api/auth/signin
   login(username, password) {
     return axios
-      .post("/api/auth/signin", { username,  password })
+      .post(`${API_URL}/api/auth/signin`, { username,  password })
       .then((response) => {
 
         if (response.data.accessToken) {
@@ -19,8 +22,9 @@ class AuthService {
     localStorage.removeItem("user");
   }
 
+  // /api/auth/signup
   register(username, email, password) {
-    return axios.post("/api/auth/signup", {
+    return axios.post(`${API_URL}/api/auth/signup`, {
       username,
       email,
       password,
