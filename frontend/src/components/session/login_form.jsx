@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import './form.css';
-import '../App.css';
 
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
