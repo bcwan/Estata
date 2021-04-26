@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Router, Switch, Route, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// import { history } from '../history/history';
+import { history } from './history/history';
 import NavBarContainer from './components/navbar/navbar_container';
 import BoardAdminContainer from './components/board/board_admin_container';
 import BoardModContainer from './components/board/board_mod_container';
@@ -17,8 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="container mt-3">
-        {/* <Router history={history}> */}
-        <Router>
+        <Router history={history}>
           <NavBarContainer />
           <Switch>
             <Route exact path={["/", "/home"]} component={HomeContainer} />

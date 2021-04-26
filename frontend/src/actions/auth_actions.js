@@ -1,12 +1,13 @@
+import AuthService from '../services/auth/auth_service';
+
+import { setMessage } from './message_actions';
+
 export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
 export const REGISTER_FAIL = "REGISTER_FAIL";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
 
-import AuthService from '../services/auth/auth_service';
-
-import { setMessage } from './message_actions';
 
 const registerSuccess = () => ({
   type: REGISTER_SUCCESS

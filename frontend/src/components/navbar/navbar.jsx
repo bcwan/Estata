@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import { history } from '../../history/history';
+import { history } from '../../history/history';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export class NavBar extends Component {
@@ -14,9 +14,9 @@ export class NavBar extends Component {
 
     this.logout = this.logout.bind(this);
 
-    // history.listen((location) => {
-    //   this.props.clearMessage();
-    // });
+    history.listen((location) => {
+      this.props.clearMessage();
+    });
 
   }
 
