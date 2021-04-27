@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Switch, Route, Link } from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { history } from './history/history';

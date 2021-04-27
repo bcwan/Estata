@@ -8,7 +8,9 @@ import {
 
 const user = JSON.parse(localStorage.getItem("user"));
 
-const authReducer = (oldState = {}, action) => {
+const initialState = user ? { isLoggedIn: true, user } : { isLoggedIn: false, user: null };
+
+const authReducer = (oldState = initialState, action) => {
   Object.freeze(oldState);
   const nextState = Object.assign({}, oldState);
   switch (action.type) {
