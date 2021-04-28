@@ -6,6 +6,7 @@ import {
   LOGOUT_SUCCESS
 } from "../actions/auth_actions";
 
+// store user in localStorage
 const user = JSON.parse(localStorage.getItem("user"));
 
 const initialState = user ? { isLoggedIn: true, user } : { isLoggedIn: false, user: null };
